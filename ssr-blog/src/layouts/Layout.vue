@@ -90,7 +90,9 @@
                     <sidebar></sidebar>
                 </el-col>
                 <el-col :span="18" style="padding-left:10px">
-                    <app-main></app-main>
+                    <app-main>
+                         <slot/>
+                    </app-main>
                 </el-col>
             </el-row>
 
@@ -101,6 +103,7 @@
 
     </div>
 </template>
+
 <script>
 // import { mapGetters } from 'vuex'
 import Sidebar from './components/Sidebar'
@@ -127,9 +130,9 @@ export default {
                 active: "",
             },
             randomIcon: [],
-            "githubUsername": "GitHub-Laziji",
+            "githubUsername": "GitHub-韦凯迪",
             "blogTitle": "Laziji",
-            "blogDescribe": "欢迎来到辣子鸡的个人博客。",
+            "blogDescribe": "欢迎来到韦凯迪的个人博客。",
             "htmlTitle": "辣子鸡的博客",
             "fontColor": "#ffffff",
             "useBackgroundImage": false,
@@ -139,7 +142,15 @@ export default {
             "mini": false,
             "webSites": [
                 { "name": "v2ex", "url": "https://www.v2ex.com/member/laziji" }
-            ]
+            ],
+            audioAutoPlay: false,
+            // user
+            avatarUrl: 'https://avatars.githubusercontent.com/u/23287210?s=460&u=6b1b9aa6de548489f6df43df0c2757408d2ff8ed&v=4',
+            name: '韦凯迪',
+            location: 'Nanning',
+            blog: null,
+            followers: 0,
+            following: 0
         }
     },
     computed: {

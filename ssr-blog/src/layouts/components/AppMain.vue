@@ -1,15 +1,9 @@
 <template>
   <section>
-    <transition name="fade">
+    <!-- <transition name="fade"> -->
       <!-- <router-view></router-view> -->
-      <static-query>
-        query {
-          metadata {
-            siteName
-          }
-        }
-        </static-query>
-    </transition>
+       <slot/>
+    <!-- </transition> -->
   </section>
 </template>
 
