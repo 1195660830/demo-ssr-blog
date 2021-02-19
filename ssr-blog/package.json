@@ -10,7 +10,11 @@
     "gridsome": "^0.7.0",
     "element-ui": "^2.3.5",
     "vant": "^1.1.2",
-    "axios": "0.17.1"
-
+    "axios": "0.17.1",
+    "mavon-editor": "^2.5.2",
+    "js-base64": "^2.4.3",
+    "js-cookie": "2.2.0",
+    "js-sha1": "^0.6.0",
+    "vuex": "3.0.1"
   }
 }

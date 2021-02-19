@@ -1,5 +1,13 @@
-import request from '@/utils/request'
-import store from '../store/index'
+import request from './../../utils/request'
+// import store from '../store/index'
+
+const store = {
+    state: {
+        configuration: {
+            githubUsername: 'GitHub-Laziji'
+        }
+    }
+}
 
 export default {
     getBlogReadme: function () {

@@ -55,10 +55,9 @@ export default {
                 break
             }
             GistApi.single(this.blog.id).then((response) => {
-                this.loading = false
-                // debugger
                 let result = response.data
                 for (let key in result.files) {
+                    
                     this.blog['title'] = key
                     this.blog['content'] = this.$markdown(result.files[key]['content'])
                     this.blog['description'] = result['description']
@@ -67,9 +66,7 @@ export default {
                     break
                 }
                 
-            }).then(() => {
-                // debugger
-                this.loading = false})
+            }).then(() => this.loading = false)
         })
     },
 }

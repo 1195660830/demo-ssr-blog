@@ -16,8 +16,20 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 
 
+import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+import 'mavon-editor/dist/markdown/github-markdown.min.css'
+
+
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+
+  Vue.use(mavonEditor)
+
+  Vue.prototype.$markdown = function (value) {
+    return mavonEditor.markdownIt.render(value)
+  }
+
   Vue.use(Vant)
   Vue.use(ElementUI)
   Vue.prototype.$util = util
