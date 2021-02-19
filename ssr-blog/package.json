@@ -9,7 +9,8 @@
   "dependencies": {
     "gridsome": "^0.7.0",
     "element-ui": "^2.3.5",
-    "vant": "^1.1.2"
+    "vant": "^1.1.2",
+    "axios": "0.17.1"
 
   }
 }
